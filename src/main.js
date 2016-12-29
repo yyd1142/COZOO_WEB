@@ -9,6 +9,8 @@ Vue.use(VueRouter);
 
 // 定义组件, 也可以像教程之前教的方法从别的文件引入
 import home from './components/home.vue'
+import pic from './components/picture.vue'
+import slider from './components/slider.vue'
 
 
 
@@ -21,6 +23,14 @@ const router = new VueRouter({
     {
       path: '/',
       component: home
+    },
+    {
+      path: '/pic',
+      component: pic
+    },
+    {
+      path: '/slider',
+      component: slider
     }
   ]
 })
